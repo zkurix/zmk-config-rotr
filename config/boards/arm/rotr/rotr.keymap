@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 &inc_dec_kp {
-	triggers-per-rotation = <4>;
+	triggers-per-rotation = <2>;
 };
 &def_lshft {
 	triggers-per-rotation = <4>;
@@ -27,7 +27,7 @@
 		two {
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&kp LEFT &lt 4 SPACE &kp RIGHT>;
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
 		};
 		three {
 			//PREV | PLAY/PAUSE | NEXT
